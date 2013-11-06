@@ -35,3 +35,4 @@ override_dh_install:
 override_dh_auto_clean:
 	$(mvn) clean
 	rm -rf $(DEB_MAVEN_REPO)
+	rm -rf $(CURDIR)/debian/.mh
