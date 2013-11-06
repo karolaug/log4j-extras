@@ -1,0 +1,18 @@
+Source: log4j-extras
+Section: java
+Priority: extra
+Maintainer: Karol Auguštin <karol@augustin.pl>
+Build-Depends: debhelper (>= 8.0.0),
+	       maven-debian-helper
+Build-Depends-Indep:
+Standards-Version: 3.9.2
+Vcs-Git: git://git.braintech.pl/log4j-extras.git
+Vcs-Browser: http://git.braintech.pl/log4j-extras.git
+
+Package: liblog4j-extras-java
+Architecture: all
+Depends: ${misc:Depends},
+Description: A library implementing the Signalml 2.0 specification.
+ XML descriptions of formats are converted to Java source code and then
+ compiled to normal bytecode. This package includes the Java JAR which
+ can be used by application to implement Signalml.
